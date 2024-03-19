@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<title>Online Communication Skills Enhancement Site</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="icon" type="image/x-icon" href="images/eng.png">
+</head>
+<body>
+  <div class="container-fluid p-1  bg-secondary text-white">
+  <div class="row">
+                 <!--img nav-->
+              <div class="col-sm-1">
+              <img src="images/eng.png" width="100%" height="100%">
+              </div>
+          
+          
+                  <!--Grammeer-->
+                <div class="col-sm-1">
+                        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                      
+                                                
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                  <span class="navbar-toggler-icon"></span>
+                                  </button>
+                              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                  <ul class="navbar-nav">
+                            
+                                    <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" style="color:rgb(10, 237, 10);" role="button" data-bs-toggle="dropdown">Grammer</a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="grammar.html" target="_blank">Parts of speech</a></li>
+                                    <li><a class="dropdown-item" href="tenses.html"target="_blank">Tenses</a></li>
+                                    <li><a class="dropdown-item" href="direct.html"target="_blank">Direct indirect</a></li>
+                                    <li><a class="dropdown-item" href="degree.html"target="_blank">Degrees of Comparision</a></li>
+                                    <li><a class="dropdown-item" href="ifclause.html"target="_blank">If Clauses</a></li>
+                                    <li><a class="dropdown-item" href="pattern.html"target="_blank">Sentence pattern</a></li>
+                                    
+                                    
+                                    </ul>
+                                  </li>
+                                  </ul>
+                              </div>
+                         </nav>
+                  </div>
+             
+             <!--vocubularies-->
+                                <div class="col-sm-1">
+                                     <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                              
+                                                        
+                                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                          <span class="navbar-toggler-icon"></span>
+                                          </button>
+                                       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                          <ul class="navbar-nav">
+                                    
+                                            <li class="nav-item dropdown">
+                                              <a class="nav-link dropdown-toggle" href="#" style="color:rgb(10, 237, 10);" role="button" data-bs-toggle="dropdown">Phonetics</a>
+                                            <ul class="dropdown-menu">
+                                            
+                                            <li><a class="dropdown-item" href="vowels .html"target="_blank">Vowels Sounds</a></li>
+                                            <li><a class="dropdown-item" href="consonent.html"target="_blank">Consonents </a></li>
+                                            <li><a class="dropdown-item" href="syllables.html"target="_blank">Syllables</a></li>
+                                            <li><a class="dropdown-item" href="voiced.html"target="_blank">Voiced Sounds</a></li>
+                                            <li><a class="dropdown-item" href="voiceless.html"target="_blank">Voiceless Sounds</a></li>
+                                            <li><a class="dropdown-item" href="vocubulary.html"target="_blank">Vocabulary</a></li>
+                                            </ul>
+                                          </li>
+                                          </ul>
+                                       </div>
+                                    </nav>
+                              </div>
+             
+                            <!--Exercise-->
+                  <div class="col-sm-1">
+                        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                    
+                                              
+                                <button class="navbar-toggler" type="button" data-bs-toggle= "collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                          
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" style="color:rgb(10, 237, 10);" role="button" data-bs-toggle="dropdown">Exercises</a>
+                                  <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="reading.html"target="_blank">Grammar Test</a></li>
+                                  
+                                  </ul>
+                                </li>
+                                </ul>
+                            </div>
+                       </nav>
+                </div>
+
+                                        <!--learning Platform-->
+                                <div class="col-sm-1">
+                                      <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">               
+                                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                              <span class="navbar-toggler-icon"></span>
+                                              </button>
+                                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                              <ul class="navbar-nav">
+                                        
+                                                <li class="nav-item dropdown">
+                                                  <a class="nav-link dropdown-toggle" href="#" style="color:rgb(10, 237, 10);"  role="button" data-bs-toggle="dropdown">Learning<br> Platforms</a>
+                                                <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="youtube.html"target="_blank">Youtube</a></li>
+                                               
+                                                </ul>
+                                              </li>
+                                              </ul>
+                                           </div>
+                                        </nav>
+                                    
+                                </div>      
+                       <!--Search container-->
+                       
+                                  <div class="col-sm-3">
+                                    <input type="text" id="searchInput" placeholder="Search">
+                                    <button class="searchbutton"  onclick="performSearch()">Search</button>
+                                
+                                    <div id="searchResults"></div>
+                                
+                                    <script>
+                                  function performSearch() {
+      // Get the search query from the input field
+      var query = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      // Define the mapping of keywords to page URLs
+      var pageMapping = {
+        'grammar': 'grammar.html',
+        'adjective': 'adjective.html',
+        'adverb': 'adverb.html',
+        'chatbot': 'chatbot.html',
+        'conjunction': 'conjunction.html',
+        'consonent': 'consonent.html',
+        'degree': 'degree.html',
+        'direct': 'direct.html',
+        'ifclause': 'ifclause.html',
+        'interjection': 'interjection.html',
+        'parts of speech': 'part.html',
+        'sentence pattern': 'pattern.html',
+        'preposition': 'preposition.html',
+        'pronoun': 'pronoun.html',
+        'exercise': 'reading.html',
+        'syllables': 'syllables.html',
+        'tenses': 'tenses.html',
+        'verb': 'verb.html',
+                'vocubulary': 'vocubulary.html',
+        'voiced sounds': 'voiced.html',
+        'voiceless sounds': 'voiceless.html',
+        'vowels': 'vowels.html',
+        'Learning source': 'youtube.html',
+        'phonetics': 'vowels.html',
+        
+        
+        // Add more keywords and corresponding page URLs as needed
+      };
+
+      // Check if the query is not empty and there's a corresponding page URL
+      if (query !== '' && pageMapping.hasOwnProperty(query)) {
+        // Navigate to the corresponding page URL
+        window.location.href = pageMapping[query];
+      } else {
+        // If no matching page URL found, display an error message
+        alert('No matching page found for the search term.');
+      }
+    }
+                                  </script>                
+                                         
+                                      </div>   
+                                      
+                                    
+                                <!--Sigin-->
+                                      <div class="col-sm-1" style="margin-right: 50px;">
+                                           <button style="width:80px; height: 40px; font-size:20px; margin-top:16px; background-color: rgb(14, 240, 14); border-radius:15px;" onclick="window.location.href='http://localhost/Englishconvo/signup.html';" target="_blank">Signup</button>
+                                      </div>
+
+                                    
+                                  <!--Login-->
+                                  <div class="col-sm-1" >
+                                          <button style="width:80px; height: 40px; font-size:20px; margin-top:16px; background-color: rgb(6, 253, 6); border-radius:15px;" onclick="window.location.href='http://localhost/Englishconvo/login.html';" target="_blank" >Login</button>
+                                  </div>         
+
+                                <!--Explore bar-->
+
+                    <div class="col-sm-1 " style="margin-left: 20px;">
+                      <button style="width:80px; height: 40px; font-size:18px; margin-top:16px; background-color: rgb(6, 253, 6); border-radius:15px;" onclick="window.location.href='chatbot.html';" target="_blank">Chatbot</button>
+
+          
+                       </div>
+  </div>
+  </div>
+  
+
+<!----------------------------------------------Nav bar complete----------------------------------------------------------------------->
+
+  
+                             <!--images body-->
+                 <div class="container mt-5">
+                 
+                    <img src="images/eng1.jpg" width="100%" height="100%"        style=" background: cover;">
+
+                       
+                 </div>
+
+                 <br>
+                 <br>
+                 
+          <div>       
+                              <!--box1-->
+                 <div class="container-fluid p-5 mt-5 bg-dark text-white">
+                                <h1 style="text-align: center;">Why Grammer is Important</h1>
+                                <br>
+                                <p style="text-align: center;">Grammar is a vital part of any language. 
+                                It's essential to allow learners to express their thoughts adequately and form and communicate precise ideas.
+                                Grammar is not just about spelling or punctuation. 
+                                It is an integral part of a language because it allows them to construct sentences and write coherently.
+                                </p>  
+
+                
+                                  <h1 style="text-align: center; margin-top: 50px;">What type of Activities to Learn English</h1>
+                                  <br>
+                                  <p style="text-align: center;">Speak, speak, speak. Let's start right off by saying that there isn't a magic pill for better speaking. ...
+                                                  <br>Reflect on your conversations. ...</br>
+                                                <br> Listen and read. ...<br>
+                                                    <br> Prepare cheat sheets. ...</br>
+                                                  
+                                                    <br>Record your voice. ...</br>
+                                                <br> Learn phrases rather than single words. ...</br>
+                                                  <br> Have fun.</br>
+                                  </p>  
+                                         <h1 style="text-align: center; margin-bottom: 10px;">What do you Learn for </h1>
+                                          <p style="text-align: center;  ">
+                                            <br>  You can Write English without Grammar Mistakes</br>
+                                          <br>You can Improve Your Reading Skills</br>
+                                          <br> You can Improve Your Listening Skills through this Website</br>
+                                          <br>You can Speak English Without Grammar Mistakes and Troubles</br>
+                                          </p>
+                  
+                              <!--box3-->
+                
+                 <!--box2-->                   
+                </div> 
+          </div>         
+      <div class="container mt-3">
+      <h4 style="text-align:center;  font-family:sans-serif;"><b>Learn for </b></h4>
+      <div class="row">
+
+                   <div class="col-sm-3">
+                        
+                            <details style="text-align:center;">
+                              <summary style="font-size:20px; color:rgb(0, 255, 0);">Grammer </summary>
+                              <br>
+                              <h5>Parts of Speech</h5>
+                              <br>
+                              <h5>Tenses</h5>
+                              <br>
+                              <h5>Direct Indirect Speech</h5>
+                              <br>
+                              <h5>Degree of Comparision</h5>
+                              <br>
+                              <h5>Sentence Pattern</h5>
+                              </details>
+                    </div>
+                    <div class="col-sm-3">
+                        
+                                <details style="text-align:center;">
+                                <summary style="font-size:20px; color:rgb(0, 255, 0);">Phonetics </summary>
+                                <h5>Phonetics</h5>
+                                  <br>
+                                  <h5>Vowels Sounds</h5>
+                                  <br>
+                                  <h5>Consonents</h5>
+                                  <br>
+                                  <h5>Syllables</h5>
+                                  <br>
+                                  <h5>Voiced Sounds</h5>
+                                  <br>
+                                  <h5>Voiceless Sounds</h5>
+                                  <br>
+                                </details>
+                    </div>
+                    <div class="col-sm-3">
+                        
+                            <details style="text-align:center;">
+                             <summary style="font-size:20px; color:rgb(0, 255, 0);">Exercises </summary>
+                             <br>
+                              <h5>Grammar test</h5>
+                              <br>
+                              
+                             </details>
+                    </div>
+                       <div class="col-sm-3">
+                        
+                                <details style="text-align:center;">
+                                 <summary style="font-size:20px; color:rgb(0, 255, 0);">Chatbot </summary>
+                                 <br>
+                                  <h5>Conversation with AI</h5>
+                                  <br>
+                                  
+                                  
+                                 </details>
+                        </div>
+                                   
+
+        </div>
+        </div>
+<br>
+<br>
+<br>
+                   
+                     <!--Example Method-->
+
+                     
+                     <div class="container-fluid bg-dark text-green p-5 mt-5">
+                      <h1 style="text-align: center; color: rgb(11, 245, 11 ) ;font-family:bold; margin-bottom:20px; ">Roadmap to Learn English (Tips)</h1>
+                      <br>
+                      <br>
+<div class="row">
+                  
+                  <br>
+                  <br>
+                      <div class="col-sm-4">
+
+                                  <details style="text-align:center;">
+                                    <summary style="font-size:20px; color:#e2e9e2; font-family:bold;">Step 1: Basics of English</summary>
+                                    <br>
+                                    <h5 style="color: rgb(255, 0, 0);">Alphabet and Pronunciation:</h5>
+                                    <br>
+                                      <p style="color: white;">
+                                        Learn the English alphabet and basic pronunciation rules.<br>
+
+                                        Practice common sounds and phonetics.<br>
+
+                                      </p>
+                                    <br>
+                                    <h5 style="color: rgb(255, 0, 0);">Basic Vocabulary:</h5>
+                                    <br>
+                                      <p style="color: white;">
+                                        Start with essential everyday words.<br>
+                                        Use flashcards or language apps for vocabulary building.<br>
+
+                                      </p>
+                                      <h5 style="color: rgb(255, 0, 0);">Greetings and Introductions:</h5>
+                                      <br>
+                                      <p style="color: white;">
+                                        <br>Learn common greetings, introductions, and polite expressions.<br>
+                                      </p>
+
+                                      <br>
+                                      <h5 style="color: rgb(255, 0, 0);">Basic Grammar:</h5>
+                                    <br>
+                                      <p style="color: white;">
+                                        Understand basic sentence structure.<br>
+                                        Learn common verbs, nouns, and adjectives.
+                                        <br>
+                                      </p>
+                                    </details>
+                                    <!----complete step 1-->
+                                <br>
+                                <br>
+
+                                <div class="arrow-container">
+                                  <div class="arrow">
+                                  </div>
+                                </div>
+        </div>					  
+                <!--complete 1 cols4-->
+                  <div class="col-sm-4">
+                                    <details style="text-align:center;">
+                                      <summary style="font-size:20px; color:#e2e9e2; font-family:bold;">Step 2: Foundational Grammar and Vocabulary</summary>
+                                                <br>
+                                                <h5 style="color: rgb(255, 0, 0);">Grammar Rules:</h5>
+                                                <br>
+                                                  <p style="color: white;">
+                                                    Study fundamental grammar rules (tenses, articles, prepositions.<br>
+                                                    Practice through exercises and examples..<br>
+
+                                                  </p>
+                                      <br>
+                                                  <h5 style="color: rgb(255, 0, 0);">Expanded Vocabulary:</h5>
+                                                  <br>
+                                                    <p style="color: white;">
+                                                      Increase your vocabulary with words related to daily life, hobbies, and interests.<br>
+                                                      
+                                                    </p>
+                                                      <h5 style="color: rgb(255, 0, 0);">Reading Skills:</h5>
+                                                      <br>
+                                                      <p style="color: white;">
+                                                        <br>Read simple texts, articles, and short stories.<br>
+                                                        Focus on comprehension and pronunciation.<br>
+                                                      </p>
+                                        <br>
+                                                    </details>                                            
+                                                        <br>
+                                                        <br>
+                                                        <div class="arrow-container">
+                                                          <div class="arrow">
+                                                          </div>
+                                                        </div>                                              
+                    </div>
+                     <!--complete 2nd cols-->
+                    <div class="col-sm-4">
+                                                  <details style="text-align:center;">
+                                                    <summary style="font-size:20px; color:#e2e9e2; font-family:bold;">Step 3: Conversational Skills</summary>
+                                                              <br>
+                                                              <h5 style="color: rgb(248, 4, 4);">Listening Practice:</h5>
+                                                              <br>
+                                                                <p style="color: white;">
+                                                                  Listen to podcasts, audiobooks, and watch English movies or TV shows.<br>
+                                                                  Practice understanding different accents.<br>
+
+                                                                </p>
+                                                    <br>
+                                                                <h5 style="color: rgb(252, 6, 6);">Speaking Practice:</h5>
+                                                                <br>
+                                                                  <p style="color: white;">
+                                                                    Engage in simple conversations with native speakers or language exchange partners.<br>
+                                                                    Use language apps with speaking exercises.<br>
+                                                                  </p>                                                                
+                                                      <br>
+                                                                  </details>
+                                                                      <br>
+                                                                      <br>
+
+                                                                      <div class="arrow-container">
+                                                                        <div class="arrow">
+                                                                        </div>
+                                                                      </div>
+                                                          
+                    </div>
+                  
+                    <div class="col-sm-4" style="margin-top: 100px;">
+                                                  <details style="text-align:center;">
+                                                    <summary style="font-size:20px; color:#e2e9e2; font-family:bold;">Step 4: Intermediate Level</summary>
+                                                              <br>
+                                                              <h5 style="color: rgb(253, 3, 3);">Advanced Grammar:</h5>
+                                                              <br>
+                                                                <p style="color: white;">
+                                                                  Deepen your understanding of more complex grammar structures.<br>
+                                                                Practice using them in sentences.<br>
+                                                                  
+
+                                                                </p>
+                                                    <br>
+                                                                <h5 style="color: rgb(228, 11, 11);">Writing Skills:</h5>
+                                                                <br>
+                                                                  <p style="color: rgb(255, 255, 255);">
+                                                                    Write short essays, articles, or even a diary in English.<br>
+                                                                    Seek feedback from teachers or language exchange partners.<br>
+                                                                                                                                   </p>
+                                                                    
+                                                      <br>
+                                                                  </details>
+                                                                        
+                                                       
+                                                                      <br>
+                                                                      <br>
+
+                                                                      <div class="arrow-container">
+                                                                        <div class="arrow">
+                                                                        </div>
+                                                                      </div>    
+                    </div>
+                      <!--colsm nxt-->
+                   <div class="col-sm-4" style="margin-top: 100px;">
+                                          <details style="text-align:center;">
+                                            <summary style="font-size:20px; color:#e2e9e2; font-family:bold;">Step 5: Advanced Fluency</summary>
+                                                      <br>
+                                                      <h5 style="color: rgb(255, 0, 0);">Advanced Vocabulary:</h5>
+                                                      <br>
+                                                        <p style="color: white;">
+                                                          Learn specialized vocabulary for your field or interests.<br>
+                                                          Read advanced literature and articles.<br>
+                                                          
+
+                                                        </p>
+                                            <br>
+                                                        <h5 style="color: rgb(255, 0, 0);">Cultural Understanding:</h5>
+                                                        <br>
+                                                          <p style="color: white;">
+                                                            Familiarize yourself with English-speaking cultures and idioms.<br>
+                                                            Understand cultural nuances in communication.<br>
+                                                          </p>
+                                                            
+                                              <br>
+                                                          <h5 style="color: rgb(255, 0, 0);">Public Speaking:</h5>
+                                                          <br>
+                                                            <p style="color: white;">
+                                                              Engage in public speaking events or join debate clubs.<br>
+                                                              Practice expressing complex ideas confidently.<br>
+
+                                                </p>
+                                                          </details>                                                
+                                                              <br>
+                                                              <br>
+
+                                                              <div class="arrow-container">
+                                                                <div class="arrow">
+                                                                </div>
+                                                              </div>
+                   
+                  </div>
+                       <!--colsm next-->
+                      
+                   <div class="col-sm-4" style="margin-top: 100px;">
+                        <details style="text-align:center; border:white">
+                          <summary style="font-size:20px; color:#e2e9e2; font-family:bold;">Step 6: Continuous Improvement</summary>
+                                    <br>
+                                    <h5 style="color: rgb(255, 0, 0);">Consistent Practice:</h5>
+                                    <br>
+                                      <p style="color: white;">
+                                        Continue reading, listening, and speaking regularly.<br>
+                                        Join language learning communities for support and motivation.<br>
+
+                                      </p>
+                          <br>
+                                      <h5 style="color: rgb(255, 0, 0);">Grammar Refinement:</h5>
+                                      <br>
+                                        <p style="color: white;">
+                                          Regularly review and refine your grammar skills.<br>
+                                          Correct common mistakes and learn from them.<br>
+                                        </p>                             
+                            <br>
+                                        <h5 style="color: rgb(255, 0, 0);">Advanced Skills:</h5>
+                                        <br>
+                                          <p style="color: white;">
+                                            Enhance your language skills in specific areas (business English, academic writing, etc.).<br>
+                                            Take advanced language courses if needed.<br>
+
+                              </p>
+                                        </details>                         
+                                            <br>
+                                            <br>
+                                            <div class="arrow-container1">
+                                              <div class="arrow1">
+                                              </div>
+                                            </div>             
+                   </div>
+
+                  <!--colsm next-->
+
+                  <!--next part consistency -->
+             
+                                <h1 style="color:bisque; margin-left: 800px; margin-top:100px; font-family:cursive;">Consistency is the key</h1>
+                                <div class="arrow-container1" style="margin-left: 1000px; margin-top: 100px;">
+                                     <div class="arrow1">
+                                      </div>
+                                           
+                                    </div>
+                                <marquee style="margin-top: 30px; font-family: bold; color:rgb(255, 255, 255); font-size:40px;">
+                                  Regular, small doses of practice are more effective than sporadic intense study sessions. Embrace opportunities to use English in your daily life, and be patient with yourself as you progress through the stages of learning.<br></marquee>
+                                   
+</div>
+</div>
+                      </div>                                 
+                    </div>                    
+                                </div>
+                                <div class="container-fluid p-5 mt-5 bg-secondary">
+                                       <div class="row">
+                                           <div class="col-sm-4" style="text-align: left;">
+                                              <h3 style="color:rgb(247, 242, 242)" >Grammar</h3>
+                                              <br>
+                                              <a  href="part.html" target="_blank" style="color: #00ff4c;" >Parts of speech</a><br>
+                                              <a  href="tenses.html" target="_blank" style="color: #00ff4c;" >Tenses</a><br>
+                                              <a  href="direct.html"target="_blank"  style="color: #00ff4c;" >Direct indirect</a><br>
+                                              <a  href="degree.html"target="_blank"  style="color: #00ff4c;" >Degree of Comparision</a><br>
+                                              <a  href="ifclause.html" target="_blank" style="color: #00ff4c;" >If Clauses</a><br>
+                                              <a  href="pattern.html" target="_blank" style="color: #00ff4c;" >Sentence pattern</a><br>
+                                            
+                                           </div>
+                                           <div class="col-sm-4" style="text-align: center;">
+                                            <h3 style="color:rgb(255, 255, 255)" >Phonetics</h3>
+                                              <br>
+                                              
+                                              <a  href="vowels .html" target="_blank" style="color: #00ff4c;" >Vowels Sounds</a><br>
+                                              <a  href="consonent.html"target="_blank"  style="color: #00ff4c;" >Consonents</a><br>
+                                              <a  href="syllables.html"target="_blank"  style="color: #00ff4c;" >Syllables</a><br>
+                                              <a  href="voiced.html"target="_blank"  style="color: #00ff4c;" >Voiced Sounds</a><br>
+                                              <a  href="voiceless.html"target="_blank"  style="color: #00ff4c;" >Voiceless Sounds</a><br>
+                                              <a  href="vocubulary.html"target="_blank"  style="color: #00ff4c;" >Vocubularies</a><br>
+                                              
+                                           </div>    
+
+
+                                           <div class="col-sm-4" style="text-align: right;">
+                                            <h3 style="color:rgb(255, 255, 255)" >Exercises</h3>
+                                              <br>
+                                              
+                                              <a  href="reading.html" target="_blank" style="color: #00ff4c;" >Grammar Test</a><br>
+                                            
+                                           </div>   
+                                           <div class="container-fluid mt-5 p-5 bg-secondary border">
+                                            <div class="row">
+                                                <div class="col-sm-1" style="text-align: left;">
+                                                  <img src="images/eng.png" width="90%" height="70%">
+                                                </div>
+                                                <div class="col-sm-4" style="margin-right: 50px;">
+                                                  <P style="font-family: cursive; color:#000000">Join English Mastery Hub and embark on a transformative language learning journey. <BR>Let the power of words elevate your communication and open doors to new opportunities!</P>
+                                                </div>
+                                                <div class="col-sm-3" style="text-align: center;">
+                                                  <h4>Designed by</h4>
+                                                  <p style="color: #00ff4c;">Dharaneshwaran R</p>
+                                                  <p style="color: #00ff4c;">III-Year<br>
+                                                    BSC.Computer Science-'C'<br>
+                                                    St. Joseph College-Trichy<br>
+                                                  </p>
+                                                </div>
+                                                <div class="col-sm-3" style="text-align: right;">
+                                                  <h4>Learning Sources</h4>
+                                                  <a href="https://www.w3schools.com/" style="color: #00ff4c;" >w3schools.com</a>
+                                                  <br>
+                                                  
+                                                </div>
+                                             </div>
+                                          </div>  
+                                       </div>
+                                </div>
+                                
+</body>
+</html>

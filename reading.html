@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Grammar Test</title>
+</head>
+<style>
+ body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(27, 27, 27);
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      height: 300vh; /* Set a fixed height for the sidebar */
+      overflow-y: auto; /* Add a vertical scroll bar if needed */
+      color: rgb(255, 255, 255);
+    }
+
+    .sidebar h2 {
+      color: rgb(0, 255, 13);
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .button-link {
+      padding: 10px 15px;
+      font-size: 13px;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+
+    .button-link1 {
+      padding: 10px 15px;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      margin-left: 1000px;
+      margin-top: 50px;
+    }
+
+    .button-link:hover {
+      background-color: #45a049;
+    }
+
+    .quiz-container {
+      width: 80%;
+      margin: 50px auto;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+      margin-top: 250px;
+      background-color: rgb(27, 27, 27);
+      color: white;
+    }
+
+    .question {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .options {
+      margin-bottom: 20px;
+    }
+
+    .option {
+      margin: 5px;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      background-color: rgb(0, 255, 30);
+      color: black;
+      border-radius: 5px;
+    }
+
+    .option:hover {
+      background-color: rgb(0, 255, 0);
+    }
+
+    .submit {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .submit:hover {
+      background-color: #00ff0d;
+    }
+
+    .result {
+      font-size: 20px;
+      margin-top: 20px;
+      display: none;
+      margin-left: 250px;
+      border-radius: 5px;
+      border-color: green;
+      margin: 5px;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      background-color: grey;
+      color: black;
+      border-radius: 5px;
+    }
+
+    .correct {
+      background-color: #4CAF50; /* Green */
+    }
+
+    .incorrect {
+      background-color: #f44336; /* Red */
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+
+
+</style>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Grammar</h2>
+      <ul>
+        <li><a href="index.html" style="color: #0004ff;">Home</a></li>
+        <li><a href="part.html">Parts of Speeech</a></li>
+        <li><a href="pronoun.html">Pronoun</a></li>
+        <li><a href="verb.html">Verb</a></li>
+        <li><a href="adverb.html">AdVerb</a></li>
+        <li><a href="adjective.html">Adjective</a></li>
+        <li><a href="preposition.html">Preposition</a></li>
+        <li><a href="conjunction.html">Conjunction</a></li>
+        <li><a href="interjection.html">Interjection</a></li>
+
+        <li><a href="tenses.html">Tenses </a></li>
+        <li><a href="direct.html">Direct and Indirect</a></li>
+		<li><a href="degree.html">Degree of Comparision</a></li>
+		<li><a href="ifclause.html">If Clauses</a></li>
+		<li><a href="pattern.html">Sentence Pattern</a></li>
+    <h2>Phonetics</h2> 
+		
+    <li><a href="vowels .html">Vowels sounds</a></li>
+    <li><a href="consonent.html">Consonents sounds</a></li>
+    <li><a href="syllables.html">Syllables</a></li>
+    <li><a href="voiced.html">Voiced sounds</a></li>
+    <li><a href="voiceless.html">Voiceless,sounds</a></li>
+    <li><a href="vocubulary.html">Vocubularies</a></li>
+    <h2>Exercises</h2> 
+    <li><a href="reading.html">Grammar test</a></li>
+    <h2>Learning Source</h2> 
+    <li><a href="youtube.html">Youtube</a></li>
+    <br>
+    <h2>Chat with AI</h2> 
+    <li><a href="chatbot.html">Chatbot</a></li>
+        <!-- Add more list items as needed -->
+      </ul>
+    </div>
+
+
+
+    <div class="content">
+
+      
+
+
+      <h1 style="color: rgb(0, 255, 0); font-style: italic;  text-align: center;">Grammar Test</h1>  
+
+      <div class="quiz-container">
+        <div id="question" class="question"></div>
+        <div id="options" class="options"></div>
+        <button id="submit" class="submit">Submit</button>
+    </div>
+    <div id="result" class="result"></div>
+    <script >
+	  const quizData = [
+    {
+        question: "The cat ___________ on the windowsill?",
+        options: ["is", "are", "am", "were"],
+        answer: "is"
+    },
+    {
+        question: "Select the sentence with the correct subject-verb agreement:",
+        options: ["The dogs barking loudly in the park.", " The dog barks loudly in the park.", "The dog bark loudly in the park.", "The dogs bark loudly in the park."],
+        answer: "The dog barks loudly in the park."
+    },
+
+    {
+        question: "Which sentence is correctly punctuated?",
+        options: [" My favorite colors are blue, green and purple.", " My favorite colors are blue, green, and purple.", "My favorite colors are blue green and purple.", "My favorite colors are blue green, and purple."],
+        answer: "My favorite colors are blue, green, and purple."
+    },
+
+    {
+        question: "Sarah and _______ went to the store.",
+        options: ["her", "  she", "they", "them"],
+        answer: "they"
+    },
+
+    {
+        question: "Select the correct sentence that uses the apostrophe correctly:",
+        options: [" The dogs collar is too tight.", " The dog's collar is too tight.", "The dogs' collar is too tight.", "The dogs collars are too tight."],
+        answer: "The dog's collar is too tight."
+    },
+
+    {
+        question: "Identify the sentence with the correct use of the past tense:",
+        options: [" I goes to the store yesterday.", " I go to the store yesterday.", "I went to the store yesterday.", " I goed to the store yesterday."],
+        answer: "I went to the store yesterday."
+    },
+
+    {
+        question: "The book is _______.",
+        options: [" our", "  us", " ours", "we"],
+        answer: "ours"
+    },
+
+    {
+        question: "Select the sentence with the correct use of comparative adjectives:",
+        options: ["She is more taller than him.", " She is tall as him.", "She is taller than him.", " She is tall than him."],
+        answer: " She is taller than him."
+    },
+
+    {
+        question: "Identify the sentence with the correct use of the semicolon:",
+        options: ["I love pizza; my favorite topping is pepperoni.", " I love pizza, my favorite topping is pepperoni.", "TI love pizza: my favorite topping is pepperoni.", " I love pizza my favorite topping is pepperoni."],
+        answer: " I love pizza; my favorite topping is pepperoni."
+    },
+
+    {
+        question: "They ___________ to the concert last night.",
+        options: ["goes", "go", " went", "going"],
+        answer: "went"
+    },
+   // Add more questions here
+];
+
+
+        const questionElement = document.getElementById('question');
+        const optionsElement = document.getElementById('options');
+        const submitButton = document.getElementById('submit');
+        const resultElement = document.getElementById('result');
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+          const currentQuizData = quizData[currentQuestion];
+          questionElement.innerText = currentQuizData.question;
+          optionsElement.innerHTML = "";
+          currentQuizData.options.forEach(option => {
+            const button = document.createElement('button');
+            button.innerText = option;
+            button.classList.add('option');
+            button.addEventListener('click', () => checkAnswer(option));
+            optionsElement.appendChild(button);
+          });
+        }
+
+        function checkAnswer(answer) {
+          const currentQuizData = quizData[currentQuestion];
+          const buttons = document.querySelectorAll('.option');
+          buttons.forEach(button => {
+            if (button.innerText === currentQuizData.answer) {
+              button.classList.add('correct');
+            } else {
+              button.classList.add('incorrect');
+            }
+            button.disabled = true; // Disable options after selection
+          });
+
+          if (answer === currentQuizData.answer) {
+            score++;
+          }
+
+          currentQuestion++;
+          if (currentQuestion < quizData.length) {
+            setTimeout(() => {
+              loadQuestion();
+            }, 1000); // Load next question after 1 second
+          } else {
+            showResult();
+          }
+        }
+
+        function showResult() {
+          resultElement.style.display = "block";
+          resultElement.innerText = `You scored ${score} out of ${quizData.length}.`;
+        }
+
+        submitButton.addEventListener('click', loadQuestion);
+
+        loadQuestion();
+
+	</script>
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+      
+
+
+
+
+
+    

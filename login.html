@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+<style>
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #100202;
+}
+
+.container {
+  background-color: #585151;
+  box-shadow: 0 0 10px rgba(69, 69, 69, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #04ff00;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" action="process-login.php" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
